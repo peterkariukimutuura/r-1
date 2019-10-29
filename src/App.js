@@ -36,7 +36,7 @@ componentWillMount(){
 addNewStudent(){
   this.setState((prevState,props)=>({
     studentList:[...prevState.studentList,{
-      id:Math.max(...prevState.studentList.map(function(0){
+      id:Math.max(...prevState.studentList.map(function(o){
         return o.id
       }))+1, name:'',grade:1,school:''
     }]
